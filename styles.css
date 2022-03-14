@@ -2,11 +2,13 @@ body {
   background-color: #99ccff;
   color: #5c6166;
   font-family: Arial, Helvetica, sans-serif;
-  overflow: hidden;
+  margin: 0 auto !important;
+  max-width: 1200px;
+  min-width: 950px;
 }
 
 h4 {
-  color: black;
+  color: #333030;
   margin-bottom: .25em;
 }
 
@@ -15,21 +17,22 @@ a {
   color: white;
 }
 
-.container {  
+.container {   
   display: grid;
   grid-template-columns: 25% 75%;
-  grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "nav about"
-    "nav portfolio"
-    "nav skills"
-    "nav education";
-  overflow: hidden;
+    "nav content"
+ ;
 }
 
+/* Sidebar */
 .nav { 
+  align-self: start;
+  position: sticky;
+  top: 1em;
+  border-radius: 10px;
   background-color: #5194d6;
   color:#f3f1f1;
   grid-area: nav;
@@ -47,8 +50,21 @@ a {
 
 #desc p {margin: 0;}
 
-#links a {
-  display: block;
+#links {
+  text-align: center;
+  display: inline-block;
+}
+
+.button {
+  display: inline-block;
+  background-color: #99ccff;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: .5em;
+  margin: .5em;
+  width: fit-content;
+  cursor: pointer;
 }
 
 #contact {
@@ -56,15 +72,21 @@ a {
   font-size: 1.4em;
 }
 
+/* Main */
 .content {
-  overflow-y: scroll;
   padding: 20px;
+  grid-area: content;
 }
 
 .slot {
   background-color: #e5f1fd;
   padding: 1em;
   border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.slot a {
+  color: #a3988e;
 }
 
 .slot b{
@@ -77,12 +99,21 @@ a {
 .note {
   margin-left: 1em;
 }
-  
-.about { grid-area: about; }
 
-.portfolio { grid-area: portfolio; }
-  
-.skills { grid-area: skillsh; }
+.gallery {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
 
-.education { grid-area: education; }
+.gallery i {
+  font-size: 3em;
+
+}
+.gallery p {
+  font-size: large;
+  font-family: sans-serif;
+}
   
+

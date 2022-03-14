@@ -6,8 +6,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <script src="https://kit.fontawesome.com/fb87f3c89a.js" crossorigin="anonymous"></script>
-    
-
     <title>Shania Robertson</title>
   </head>
 
@@ -25,10 +23,10 @@
         <br/>
         </div>
         <div id="links">
-          <a href="#about" title="About"><i class="fas fa-user"></i> About</a>
-          <a href="#portfolio" title="Portfolio"><i class="fas fa-folder"></i> Portfolio</a>
-          <a href="#skills" title="Skills"><i class="fas fa-code"></i> Skills</a>
-          <a href="#education" title="Education"><i class="fas fa-book"></i> Education</a>
+          <a href="#about" class="button" title="About"><i class="fas fa-user"></i> About</a>
+          <a href="#portfolio" class="button" title="Portfolio"><i class="fas fa-folder"></i> Portfolio</a>
+          <a href="#skills" class="button" title="Skills"><i class="fas fa-code"></i> Skills</a>
+          <a href="#education" class="button" title="Education"><i class="fas fa-book"></i> Education</a>
         </div>
         <div id="contact">
           <p>
@@ -39,7 +37,7 @@
         </div>
       </div>
       <div class="content">
-        <div class="about">
+        <div id="about">
           <h4>About me!</h4>
           <div class="slot">
             <p>My interest in web development stems from editing Tumblr themes in 2013.
@@ -48,7 +46,7 @@
             </p>
           </div>
         </div>
-        <div class="portfolio"> 
+        <div id="portfolio"> 
           <h4>Portfolio</h4>
           <div class="slot">
             <p><b>Tattery</b> // <i>Laravel, PHP, Blade, HTML/CSS, Bootstrap, JavaScript, VueJS, mySQL</i></p>
@@ -56,23 +54,36 @@
               the shop, edit their profile, like posts, delete posts, and more. Used as a collaborative learning 
               experience in front and back end web development.
             </p>
+            <p><a href="https://github.com/shaniarobertson/portfolio-website" target="_blank"><i class="fa fa-solid fa-link"></i> Source Link</a></p>
+          </div>
+          <div class="slot">
+            <p><b>Coin Jar</b> // <i>Java</i></p>
+            <p>A simple Java program that allows the user to enter a quantity of each coin (penny, nickle, dime, quarter) and
+              then calculate the total.
+            </p>
+            <p><a href="https://github.com/shaniarobertson/CoinJar" target="_blank"><i class="fa fa-solid fa-link"></i> Source Link</a></p>
           </div>
         </div>
-        <div class="skills">
+        <div id="skills">
           <h4>Skills</h4> 
           <div class="slot">
-            <i class="devicon-java-plain"></i>
-            <i class="devicon-javascript-plain"></i>
-            <i class="devicon-html5-plain"></i>
-            <i class="devicon-css3-plain"></i>
-            <i class="devicon-bootstrap-plain"></i>
-            <i class="fab fa-laravel"></i>
-            <i class="devicon-git-plain"></i>
-            <i class="devicon-mysql-plain"></i>
-
+            <div class="gallery">
+              <i class="devicon-html5-plain"><p>HTML</p></i>
+              <i class="devicon-css3-plain"><p>CSS</p></i>
+              <i class="devicon-html5-plain"><p>HTML</p></i>
+              <i class="devicon-css3-plain"><p>CSS</p></i>
+              <i class="devicon-bootstrap-plain"><p>Bootstrap</p></i>
+              <i class="devicon-java-plain"><p>Java</p></i>
+              <i class="devicon-javascript-plain"><p>JavaScript</p></i>
+              <i class="devicon-php-plain"><p>PHP</p></i>
+              <i class="fab fa-laravel"><p>Laravel</p></i>
+              <i class="devicon-vuejs-plain"><p>Vue JS</p></i>
+              <i class="devicon-mysql-plain"><p>mySQL</p></i>
+              <i class="devicon-git-plain"><p>Git</p></i> 
+            </div>
           </div>
         </div>
-        <div class="education">
+        <div id="education">
           <h4>Education</h4>
           <div class="slot">
             <p><b>Computer Science, B.S.</b> // <i>Wilmington University, 4.0 GPA, Anticipated Graduation December 2023</i></p>
