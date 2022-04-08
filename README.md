@@ -1,2 +1,2 @@
-# portfolio-website
-personal portfolio website
+# Portfolio Website
+Shania Robertson's personal portfolio website and online resume.
