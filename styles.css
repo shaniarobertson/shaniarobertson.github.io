@@ -1,3 +1,4 @@
+
 body {
   background-color: #99ccff;
   color: #5c6166;
@@ -47,6 +48,11 @@ a {
   margin-right: auto;
   margin-bottom: 1em;
   max-width: 50%;
+}
+
+#ccpfp {
+  border-radius: 50%;
+  max-width: 25%;
 }
 
 #desc p {margin: 0;}
