@@ -59,7 +59,7 @@ a {
 
 #links {
   text-align: center;
-  display: inline-block;
+  display: block;
 }
 
 .button {
