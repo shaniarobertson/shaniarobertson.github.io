@@ -15,71 +15,96 @@
       src="https://kit.fontawesome.com/fb87f3c89a.js"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
     <title>Shania Robertson</title>
   </head>
 
   <body>
     <div class="container">
+      <!-- Navigation -->
       <div class="nav">
         <div id="desc">
-          <h2>Shania Robertson</h2>
+          <h3>Shania Robertson</h3>
           <img id="pfp" src="./images/me.PNG" alt="Drawn portrait" />
-          <p>24, she/her</p>
-          <p>Computer Science Student</p>
-          <p>Wilmington University 2024</p>
+          <p>25, she/her</p>
+          <p>Software Developer</p>
           <p>Collingswood, New Jersey</p>
-
-          <br />
         </div>
         <div id="links">
           <a
             href="./downloads/ShaniaRobertsonResume.pdf"
             class="button"
             target="_blank"
-            title=" Resume"
-            ><i class="fa-regular fa-file-lines"></i> Resume</a
+            title="Resume"
           >
+            <i class="fa-regular fa-file-lines"></i> Resume
+          </a>
         </div>
         <div id="contact">
-          <p>
-            <a
-              href="https://github.com/shaniarobertson"
-              target="_blank"
-              title="Github"
-              ><i class="fab fa-github-square"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/shania-robertson/"
-              target="_blank"
-              title="LinkedIn"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <br />
-            <a
-              href="mailto:shania.robertson23@gmail.com"
-              target="_blank"
-              title="Email"
-              ><i class="fas fa-envelope"></i
-            ></a>
-          </p>
+          <a
+            href="https://github.com/shaniarobertson"
+            target="_blank"
+            title="Github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/shania-robertson/"
+            target="_blank"
+            title="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a
+            href="mailto:shania.robertson23@gmail.com"
+            target="_blank"
+            title="Email"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
         </div>
       </div>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button onclick="showContent('about')">About</button>
+        <button onclick="showContent('work')">Work Experience</button>
+        <button onclick="showContent('portfolio')">Portfolio</button>
+        <button onclick="showContent('skills')">Skills</button>
+        <button onclick="showContent('education')">Education</button>
+      </div>
+
+      <!-- Content -->
       <div class="content">
-        <div id="about">
-          <h4>About Me!</h4>
-          <div class="slot">
-            <p>
-              I am a Software Developer pursuing my Bachelor's in Computer
-              Science with certificates in Web Application Development and Java
-              Programming. I am a quick, passionate learner and self-starter,
-              driven by curiousity. I love the puzzles that come with coding,
-              whether it's debugging and testing, or taking on a new concept or
-              language!
-            </p>
-          </div>
+        <div id="about" class="content-box">
+          <h4>About Me</h4>
+          <p>
+            I am a Software Developer currently exploring new technologies to
+            expand my skill set, and actively pursuing opportunities for career
+            growth.
+          </p>
+          <p>
+            In my free time I enjoy crocheting and other crafts, playing video
+            games, and spending time with my dog.
+          </p>
         </div>
-        <div id="portfolio">
-          <h4>Portfolio</h4>
+        <div id="work" class="content-box">
+          <h4>Work Experience</h4>
+          <p>
+            <b>Microsoft Stack Developer</b>,
+            <i>Spencer Gifts & Spirit Halloween</i>, <i>01/2023 - Present</i>
+          </p>
+
+          <p>
+            Implemented full stack features such as file uploads, calculations
+            and UI enhancements, as well as SQL reporting and cron job
+            maintenance across HR, Payroll, and Field facing proprietary
+            applications.
+          </p>
+          <p>Technologies: C#, ASP.NET, Angular, SQL Server, VisualCron</p>
+        </div>
+        <div id="portfolio" class="content-box">
+          <h4>Portfolio Projects</h4>
           <div class="slot">
             <p>
               <b>ACNH Bell Calc</b> //
@@ -89,73 +114,49 @@
               Used as a introduction to using data from a third-party API, this
               calculator allows you to total your inventory's worth using items
               from the game Animal Crossing: New Horizons.
-            </p>
-            <p>
               <a
+                class="source"
                 href="https://github.com/shaniarobertson/acnhbellcalc"
                 target="_blank"
-                ><i class="fa fa-solid fa-link"></i> Source Code</a
-              >
-            </p>
-          </div>
-          <div class="slot">
-            <p>
-              <b>Tattery</b> //
-              <i
-                >Laravel, PHP, Blade, HTML/CSS, Bootstrap, JavaScript, VueJS,
-                mySQL</i
-              >
-            </p>
-            <p>
-              An Instagram-like photo gallery blog. Used as a collaborative
-              learning experience in full-stack web development.
-            </p>
-            <p>
-              <a href="https://github.com/kylenotfound/Tattery" target="_blank"
-                ><i class="fa fa-solid fa-link"></i> Source Link</a
+                ><i class="fa fa-solid fa-link"></i>Source Code</a
               >
             </p>
           </div>
         </div>
-        <div id="skills">
+        <div id="skills" class="content-box">
           <h4>Skills</h4>
-          <div class="slot">
-            <div class="gallery">
-              <i class="devicon-dotnetcore-plain"><p>.NET/ASP.NET</p></i>
-              <i class="devicon-microsoftsqlserver-plain"><p>SQL Server</p></i>
-              <i class="devicon-angularjs-plain"><p>AngularJS</p></i>
-              <i class="devicon-git-plain"><p>Git</p></i>
-              <i class="devicon-html5-plain"><p>HTML</p></i>
-              <i class="devicon-css3-plain"><p>CSS</p></i>
-              <i class="devicon-bootstrap-plain"><p>Bootstrap</p></i>
-              <i class="devicon-java-plain"><p>Java</p></i>
-              <i class="devicon-javascript-plain"><p>JavaScript</p></i>
-              <i class="devicon-php-plain"><p>PHP</p></i>
-            </div>
-            <br />
-          </div>
+          <p>
+            <i class="fa-solid fa-code"></i><b> Languages:</b> C#, Java,
+            JavaScript, PHP, HTML
+          </p>
+          <p>
+            <i class="fa-solid fa-network-wired"></i><b> Frameworks:</b> .NET,
+            ASP.NET, Angular, Entity Framework, Laravel, Bootstrap
+          </p>
+          <p>
+            <i class="fa-solid fa-toolbox"></i> <b> Tools:</b> SQL Server, Git,
+            Azure DevOps, VisualCron
+          </p>
         </div>
-        <div id="education">
+        <div id="education" class="content-box">
           <h4>Education</h4>
-          <div class="slot">
-            <p>
-              <b>Computer Science, B.S.</b> //
-              <i>Wilmington University, Graduation Spring 2024</i>
-            </p>
-            <p class="note">
-              <u>Noteworthy Courses:</u> Web Design and Development, Mobile App,
-              Database Foundations, JavaScript, PHP Applic Development, Intro to
-              Python, User Centered Design, Fundamentals in Cybersecurity
-            </p>
-            <p>
-              <b>Computer Science, A.A.</b> //
-              <i>Camden County College</i>
-            </p>
-            <p class="note">
-              <u>Noteworthy Courses:</u> Data Structures and Algorithms,
-              Computer Organization
-            </p>
-          </div>
+          <p>
+            <b>Computer Science, Bachelor of Science</b> //
+            <i>Wilmington University</i>
+          </p>
+          <p>
+            <b>Certification in Web Application Development</b> //
+            <i>Wilmington University</i>
+          </p>
+          <p></p>
+          <p>
+            <b>Certification in Java Programming</b> //
+            <i>Wilmington University</i>
+          </p>
+          <p>
+            <b>Computer Science, Associate of Arts</b> //
+            <i>Camden County College</i>
+          </p>
         </div>
       </div>
     </div>
